@@ -40,10 +40,15 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties/vars
 - Desktop-first workflow
+- Javascript
 
 ### What I learned
 
-Not done yet.
+I would say I learned how to effectively put together a full theme switching system. Organising CSS colour variables, changing the theme via and button, saving theme to local storage & using the users OS theme preference.
+
+A more comprehensive overview of this process and struggles I faced, see this project I did a couple days before this:
+
+[Github user search app](https://github.com/NinjaInShade/github-user-search)
 
 ## Author
 

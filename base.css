@@ -65,10 +65,12 @@ body {
   --txt-mid-contrast: #63687d;
   --txt-low-contrast: #848bab;
 
-  --top-bg: #20222f;
-  --main-bg: #1d1f29;
-  --card-bg: #252b42;
-  --card-bg-hover: #333a55;
+  --top-bg: #f7f9ff;
+  --main-bg: #fff;
+  --card-bg: #f1f3fa;
+  --card-bg-hover: #e1e4f0;
+
+  background-color: var(--main-bg);
 }
 
 body.dark-theme {
@@ -94,10 +96,12 @@ body.dark-theme {
   --txt-mid-contrast: #8c98c6;
   --txt-low-contrast: #8c98c6;
 
-  --top-bg: #f7f9ff;
-  --main-bg: #fff;
-  --card-bg: #f1f3fa;
-  --card-bg-hover: #e1e4f0;
+  --top-bg: #20222f;
+  --main-bg: #1d1f29;
+  --card-bg: #252b42;
+  --card-bg-hover: #333a55;
+
+  background-color: var(--main-bg);
 }
 
 .container {

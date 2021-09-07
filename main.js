@@ -1,9 +1,18 @@
 const body = document.body;
+const ThemeSwitchTxt = document.getElementById('theme-switch-txt');
+const ThemeSwitchBtn = document.getElementById('theme-switch-btn');
 
-// Toggles body class and switches over icons
+// CSS doesnt have sibling selector, so hovering over switch theme button needs javascript to add hover effect to sibling
+ThemeSwitchBtn.addEventListener('mouseover', () => {
+  ThemeSwitchTxt.classList.add('theme-switch-text-hover');
+});
+
+ThemeSwitchBtn.addEventListener('mouseout', () => {
+  ThemeSwitchTxt.classList.remove('theme-switch-text-hover');
+});
+
+// Toggles body class
 function updateThemeClasses() {
-  moonIcon.classList.toggle('hidden');
-  sunIcon.classList.toggle('hidden');
   body.classList.toggle('dark-theme');
 }
 
