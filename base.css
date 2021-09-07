@@ -13,8 +13,31 @@
   font-size: 16px;
 
   /* Typography */
-  --h1: 1.625rem;
-  --h1-lh: 38px;
+  --h1: 1.75rem;
+  --h1-lh: 34px;
+
+  --h2: 0.875rem;
+  --h2-lh: 17px;
+
+  --h3: 1.5rem;
+  --h3-lh: 29px;
+
+  --body: 0.875rem;
+  --body-lh: 17px;
+
+  --body-s: 0.75rem;
+  --body-s-lh: 15px;
+
+  --strong: 3.5rem;
+  --strong-lh: 48px;
+  --strong-ls: -2px;
+
+  --strong-s: 2rem;
+  --strong-s-lh: 39px;
+
+  --spaced: 0.75rem;
+  --spaced-lh: 15px;
+  --spaced-ls: 5px;
 
   /* Other */
 }
@@ -59,9 +82,47 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: var(--h2);
+  line-height: var(--h2-lh);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--h3);
+  line-height: var(--h3-lh);
+  font-weight: 700;
+}
+
 .body {
   font-size: var(--body);
   line-height: var(--body-lh);
+  font-weight: 700;
+}
+
+.body-s {
+  font-size: var(--body-s);
+  line-height: var(--body-s-lh);
+  font-weight: 700;
+}
+
+.strong {
+  font-size: var(--strong);
+  line-height: var(--strong-lh);
+  letter-spacing: var(--strong-ls);
+  font-weight: 700;
+}
+
+.strong-s {
+  font-size: var(--strong-s);
+  line-height: var(--strong-s-lh);
+  font-weight: 700;
+}
+
+.spaced {
+  font-size: var(--spaced);
+  line-height: var(--spaced-lh);
+  letter-spacing: var(--spaced-ls);
   font-weight: 400;
 }
 
@@ -92,8 +153,7 @@ body.dark-theme a:focus {
 
 @media (max-width: 500px) {
   :root {
-    --h1: 22px;
-
-    --body: 0.938rem;
+    --h1: 1.5rem;
+    --h1-lh: 29px;
   }
 }
