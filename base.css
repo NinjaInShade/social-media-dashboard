@@ -44,30 +44,60 @@
 
 body {
   /* Lightmode */
-  --primary: #0079ff;
-  --primary-hover: #60abff;
+  --facebook: #178ff5;
+  --twitter: #1da1f2;
+  --instagram: linear-gradient(237.61deg, #df4896 19.56%, #ee877e 65.7%, #fdc366 111.19%);
+  --youtube: #c4032b;
 
-  --txt-high-contrast: #2b3442;
-  --txt-mid-contrast: #4b6a9b;
-  --txt-low-contrast: #697c9a;
+  --theme-switch-track: #aeb3cb;
+  --theme-switch-track-hover: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
 
-  --theme-switch-btn-hover: #222731;
+  --theme-switch-thumb: #f1f3fa;
+  --theme-switch-thumb-hover: #f1f3fa;
 
-  /* Neutral */
-  --error: #f74646;
+  --success: #1eb589;
+  --error: #dc414c;
+
+  --txt-theme-switch: #848bab;
+  --txt-theme-switch-hover: #848bab;
+
+  --txt-high-contrast: #1d1f29;
+  --txt-mid-contrast: #63687d;
+  --txt-low-contrast: #848bab;
+
+  --top-bg: #20222f;
+  --main-bg: #1d1f29;
+  --card-bg: #252b42;
+  --card-bg-hover: #333a55;
 }
 
 body.dark-theme {
   /* Darkmode */
-  --primary: #0079ff;
-  --primary-hover: #60abff;
+  --facebook: #178ff5;
+  --twitter: #1da1f2;
+  --instagram: linear-gradient(237.61deg, #df4896 19.56%, #ee877e 65.7%, #fdc366 111.19%);
+  --youtube: #c4032b;
+
+  --theme-switch-track: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+  --theme-switch-track-hover: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+
+  --theme-switch-thumb: #252b42;
+  --theme-switch-thumb-hover: #333a55;
+
+  --success: #1eb589;
+  --error: #dc414c;
+
+  --txt-theme-switch: #8c98c6;
+  --txt-theme-switch-hover: #fff;
 
   --txt-high-contrast: #fff;
-  --txt-mid-contrast: #ffff;
-  --txt-low-contrast: #fff;
+  --txt-mid-contrast: #8c98c6;
+  --txt-low-contrast: #8c98c6;
 
-  /* Neutral */
-  --error: #f74646;
+  --top-bg: #f7f9ff;
+  --main-bg: #fff;
+  --card-bg: #f1f3fa;
+  --card-bg-hover: #e1e4f0;
 }
 
 .container {
