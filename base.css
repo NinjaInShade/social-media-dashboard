@@ -49,7 +49,7 @@ body {
   --instagram: linear-gradient(237.61deg, #df4896 19.56%, #ee877e 65.7%, #fdc366 111.19%);
   --youtube: #c4032b;
 
-  --theme-switch-track: #aeb3cb;
+  --theme-switch-track: linear-gradient(225deg, #aeb3cb 0%, #aeb3cb 98.02%);
   --theme-switch-track-hover: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
 
   --theme-switch-thumb: #f1f3fa;

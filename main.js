@@ -11,6 +11,10 @@ ThemeSwitchBtn.addEventListener('mouseout', () => {
   ThemeSwitchTxt.classList.remove('theme-switch-text-hover');
 });
 
+ThemeSwitchBtn.addEventListener('click', () => {
+  switchTheme();
+});
+
 // Toggles body class
 function updateThemeClasses() {
   body.classList.toggle('dark-theme');
@@ -20,11 +24,11 @@ function updateThemeClasses() {
 function switchTheme() {
   // If it contains dark-theme class, we're switching to light theme
   if (body.classList.contains('dark-theme')) {
-    ThemeSwitchTxt.innerText = 'Dark';
+    ThemeSwitchTxt.innerText = 'Dark mode';
 
     localStorage.setItem('theme', 'light');
   } else {
-    ThemeSwitchTxt.innerText = 'Light';
+    ThemeSwitchTxt.innerText = 'Light mode';
 
     localStorage.setItem('theme', 'dark');
   }
@@ -41,13 +45,13 @@ function initTheme() {
   const storedTheme = localStorage.getItem('theme');
 
   if (storedTheme === 'dark') {
-    ThemeSwitchTxt.innerText = 'Light';
+    ThemeSwitchTxt.innerText = 'Light mode';
 
     return updateThemeClasses();
   }
 
   if (prefersDarkScheme.matches) {
-    ThemeSwitchTxt.innerText = 'Dark';
+    ThemeSwitchTxt.innerText = 'Dark mode';
 
     return updateThemeClasses();
   }

@@ -34,7 +34,52 @@
   color: var(--txt-theme-switch-hover);
 }
 
-.theme-switch-btn {
+input[type='checkbox'] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  background: var(--theme-switch-track);
+  text-indent: -9999px;
+  border-radius: 12px;
+  height: 24px;
+  width: 48px;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  background: var(--theme-switch-thumb);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  top: 3px;
+}
+
+input:checked + label {
+  background: var(--theme-switch-track);
+}
+
+input:checked + label:after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+}
+
+label:hover,
+input:checked + label:hover {
+  background: var(--theme-switch-track-hover);
+}
+
+input:hover + label:after,
+input:active + label:after {
+  background: var(--theme-switch-thumb-hover);
 }
 
 @media (max-width: 500px) {
