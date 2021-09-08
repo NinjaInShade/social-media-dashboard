@@ -70,6 +70,8 @@ body {
   --card-bg: #f1f3fa;
   --card-bg-hover: #e1e4f0;
 
+  --header-border: #848bab;
+
   background-color: var(--main-bg);
 }
 
@@ -100,6 +102,8 @@ body.dark-theme {
   --main-bg: #1d1f29;
   --card-bg: #252b42;
   --card-bg-hover: #333a55;
+
+  --header-border: #333a55;
 
   background-color: var(--main-bg);
 }
@@ -185,7 +189,7 @@ body.dark-theme a:focus {
   outline: dotted #8c98c6 1.75px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   :root {
     --h1: 1.5rem;
     --h1-lh: 29px;

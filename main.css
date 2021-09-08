@@ -82,8 +82,21 @@ input:active + label:after {
   background: var(--theme-switch-thumb-hover);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .header {
     padding-bottom: 84px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .theme-switch-container {
+    justify-content: space-between;
+    border-top: 1px solid var(--header-border);
+    padding-top: 16px;
+    margin-top: 24px;
+    width: 100%;
   }
 }
