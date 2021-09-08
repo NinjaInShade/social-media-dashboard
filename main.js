@@ -51,7 +51,7 @@ function initTheme() {
   }
 
   if (prefersDarkScheme.matches) {
-    ThemeSwitchTxt.innerText = 'Dark mode';
+    ThemeSwitchTxt.innerText = 'Light mode';
 
     return updateThemeClasses();
   }
