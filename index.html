@@ -6,6 +6,7 @@
     <meta name="description" content="Social media dashboard with dark/light theme switcher" />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="big-card.css" />
     <link href="https://fonts.googleapis.com/css?family=Inter:regular,700" rel="stylesheet" />
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
     <title>Social media dashboard</title>
@@ -25,7 +26,78 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="main">
+      <section class="main-stats-container container">
+        <!-- Facebook -->
+        <article class="big-card" id="facebook-card">
+          <div class="big-card-flex">
+            <img src="./assets/icon-facebook.svg" alt="Facebook logo icon" />
+            <p class="body-s big-card-handle">@TheFrontendGuy</p>
+          </div>
+          <div class="big-card-stats">
+            <strong class="strong big-card-title">1987</strong>
+            <p class="spaced big-card-subtitle">Followers</p>
+          </div>
+          <div class="big-card-flex">
+            <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+            <p class="body-s success big-card-difference">12 Today</p>
+          </div>
+        </article>
+
+        <!-- Twitter -->
+        <article class="big-card" id="twitter-card">
+          <div class="big-card-flex">
+            <img src="./assets/icon-twitter.svg" alt="Twitter logo icon" />
+            <p class="body-s big-card-handle">@TheFrontendGuyUK</p>
+          </div>
+          <div class="big-card-stats">
+            <strong class="strong big-card-title">1044</strong>
+            <p class="spaced big-card-subtitle">Followers</p>
+          </div>
+          <div class="big-card-flex">
+            <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+            <p class="body-s success big-card-difference">99 Today</p>
+          </div>
+        </article>
+
+        <!-- Instagram -->
+        <article class="big-card" id="instagram-card">
+          <div class="big-card-flex">
+            <img src="./assets/icon-instagram.svg" alt="Instagram logo icon" />
+            <p class="body-s big-card-handle">@TheFrontendGuy</p>
+          </div>
+          <div class="big-card-stats">
+            <strong class="strong big-card-title">11k</strong>
+            <p class="spaced big-card-subtitle">Followers</p>
+          </div>
+          <div class="big-card-flex">
+            <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+            <p class="body-s success big-card-difference">1099 Today</p>
+          </div>
+        </article>
+
+        <!-- Youtube -->
+        <article class="big-card" id="youtube-card">
+          <div class="big-card-flex">
+            <img src="./assets/icon-youtube.svg" alt="Youtube logo icon" />
+            <p class="body-s big-card-handle">@TheFrontendGuy</p>
+          </div>
+          <div class="big-card-stats">
+            <strong class="strong big-card-title">8239</strong>
+            <p class="spaced big-card-subtitle">Subscribers</p>
+          </div>
+          <div class="big-card-flex">
+            <img src="./assets/icon-down.svg" alt="Down icon indiciating decrease" />
+            <p class="body-s error big-card-difference">144 Today</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="container">
+        <h3 class="small-stats-heading">Overview - Today</h3>
+        <div class="small-stats-container"></div>
+      </section>
+    </main>
 
     <script src="./main.js"></script>
   </body>

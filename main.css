@@ -82,6 +82,27 @@ input:active + label:after {
   background: var(--theme-switch-thumb-hover);
 }
 
+.main {
+  padding: 0 24px 75px 24px;
+  margin-top: -108px;
+}
+
+.main-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  margin-bottom: 46px;
+  column-gap: 30px;
+  row-gap: 24px;
+}
+
+.small-stats-heading {
+  color: var(--txt-overview-today);
+  margin-bottom: 24px;
+}
+
+.small-stats-container {
+}
+
 @media (max-width: 600px) {
   .header {
     padding-bottom: 84px;
@@ -98,5 +119,14 @@ input:active + label:after {
     padding-top: 16px;
     margin-top: 24px;
     width: 100%;
+  }
+
+  .main {
+    padding-bottom: 45px;
+    margin-top: -44px;
+  }
+
+  .small-stats-heading {
+    margin-bottom: 27px;
   }
 }

@@ -65,6 +65,8 @@ body {
   --txt-mid-contrast: #63687d;
   --txt-low-contrast: #848bab;
 
+  --txt-overview-today: #63687d;
+
   --top-bg: #f7f9ff;
   --main-bg: #fff;
   --card-bg: #f1f3fa;
@@ -97,6 +99,8 @@ body.dark-theme {
   --txt-high-contrast: #fff;
   --txt-mid-contrast: #8c98c6;
   --txt-low-contrast: #8c98c6;
+
+  --txt-overview-today: #fff;
 
   --top-bg: #20222f;
   --main-bg: #1d1f29;
@@ -162,6 +166,14 @@ h3 {
   line-height: var(--spaced-lh);
   letter-spacing: var(--spaced-ls);
   font-weight: 400;
+}
+
+.success {
+  color: var(--success);
+}
+
+.error {
+  color: var(--error);
 }
 
 button {
