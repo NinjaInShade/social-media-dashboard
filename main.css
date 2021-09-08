@@ -101,6 +101,11 @@ input:active + label:after {
 }
 
 .small-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  margin-bottom: 46px;
+  column-gap: 30px;
+  row-gap: 24px;
 }
 
 @media (max-width: 600px) {
@@ -128,5 +133,9 @@ input:active + label:after {
 
   .small-stats-heading {
     margin-bottom: 27px;
+  }
+
+  .small-stats-container {
+    row-gap: 16px;
   }
 }
