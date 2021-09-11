@@ -57,5 +57,10 @@ function initTheme() {
   }
 }
 
+async function fetchData() {}
+
 // Default theme to be activated
 initTheme();
+
+// Fetches data from API's
+fetchData();
